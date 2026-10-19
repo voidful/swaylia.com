@@ -247,6 +247,8 @@ h3 { line-height: 1.35; }
 .pro-list h3 { margin: 0 0 4px; font-size: 17px; color: var(--paper); }
 .pro-list p { margin: 0; font-size: 15px; color: rgba(245, 237, 219, 0.64); }
 .pro-art .phone { width: min(84%, 300px); margin-inline: auto; background: #050505; box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.1), 0 50px 90px -30px rgba(0, 0, 0, 0.85); }
+.promo-video { width: min(84%, 320px); margin: 0 auto; }
+.promo-video video { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; border-radius: 22px; background: #17150f; box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.1), 0 50px 90px -30px rgba(0, 0, 0, 0.85); }
 
 .compare-wrap { padding-block: clamp(56px, 8vw, 104px); }
 .compare-title { margin: 0 0 12px; font-size: clamp(24px, 2.6vw, 32px); }
@@ -324,7 +326,7 @@ h3 { line-height: 1.35; }
   .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pro-band .wrap { grid-template-columns: minmax(0, 1fr); }
   .pro-art { order: -1; }
-  .pro-art .phone { width: min(56%, 260px); }
+  .pro-art .phone, .promo-video { width: min(56%, 260px); }
 }
 @media (max-width: 820px) {
   .hero .wrap, .step .wrap { grid-template-columns: minmax(0, 1fr); }

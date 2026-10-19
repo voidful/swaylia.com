@@ -66,3 +66,12 @@
   if (skip) skip.after(bar);
   else document.body.prepend(bar);
 })();
+
+// Motion stays still for visitors who ask for less of it; they get controls instead.
+if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  for (const video of document.querySelectorAll("video[autoplay]")) {
+    video.removeAttribute("autoplay");
+    video.pause();
+    video.controls = true;
+  }
+}
