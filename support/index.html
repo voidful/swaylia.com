@@ -37,15 +37,33 @@
     .meta { color: var(--accent); font-weight: 700; margin: 0 0 24px; }
     .button { display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; background: var(--ink); color: var(--paper); font-weight: 800; text-decoration: none; margin-top: 8px; }
   </style>
-  <link rel="canonical" href="https://swaylia.com/support/">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta name="apple-itunes-app" content="app-id=6818956919">
-  <style>
+<script>
+// Google Analytics 4, only on swaylia.com itself so local previews and test runs aren't counted.
+// No ads: ad storage and Google signals stay off everywhere, and in the EEA, the UK and
+// Switzerland analytics runs without cookies (Consent Mode, analytics_storage denied).
+if (location.hostname === "swaylia.com") {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { dataLayer.push(arguments); };
+  const noAds = { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied" };
+  gtag("consent", "default", { ...noAds, analytics_storage: "denied", region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"] });
+  gtag("consent", "default", { ...noAds, analytics_storage: "granted" });
+  gtag("js", new Date());
+  gtag("config", "G-WYKJBY35LP", { allow_google_signals: false, allow_ad_personalization_signals: false });
+  const tag = document.createElement("script");
+  tag.async = true;
+  tag.src = "https://www.googletagmanager.com/gtag/js?id=G-WYKJBY35LP";
+  document.head.append(tag);
+}
+</script>
+  &lt;link rel=&#34;canonical&#34; href=&#34;https://swaylia.com/support/&#34;&gt;
+  &lt;link rel=&#34;icon&#34; href=&#34;/favicon.ico&#34; sizes=&#34;any&#34;&gt;
+  &lt;link rel=&#34;apple-touch-icon&#34; href=&#34;/apple-touch-icon.png&#34;&gt;
+  &lt;meta name=&#34;apple-itunes-app&#34; content=&#34;app-id=6818956919&#34;&gt;
+  &lt;style&gt;
     .site-home { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 18px; color: var(--ink); font-weight: 800; font-size: 17px; text-decoration: none; }
     .site-home img { width: 30px; height: 30px; border-radius: 8px; box-shadow: 0 0 0 1px var(--line); }
-  </style>
-</head>
+  &lt;/style&gt;
+&lt;/head&gt;
 <body>
   <main>
     <a class="site-home" href="/"><img src="/assets/icon-96.png" alt="" width="30" height="30">語漪 Swaylia</a>

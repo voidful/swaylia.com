@@ -32,15 +32,33 @@
     a { color: var(--accent); }
     .meta { color: var(--accent); font-weight: 700; margin: 0 0 24px; }
   </style>
-  <link rel="canonical" href="https://swaylia.com/privacy/">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta name="apple-itunes-app" content="app-id=6818956919">
-  <style>
+<script>
+// Google Analytics 4, only on swaylia.com itself so local previews and test runs aren't counted.
+// No ads: ad storage and Google signals stay off everywhere, and in the EEA, the UK and
+// Switzerland analytics runs without cookies (Consent Mode, analytics_storage denied).
+if (location.hostname === "swaylia.com") {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { dataLayer.push(arguments); };
+  const noAds = { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied" };
+  gtag("consent", "default", { ...noAds, analytics_storage: "denied", region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"] });
+  gtag("consent", "default", { ...noAds, analytics_storage: "granted" });
+  gtag("js", new Date());
+  gtag("config", "G-WYKJBY35LP", { allow_google_signals: false, allow_ad_personalization_signals: false });
+  const tag = document.createElement("script");
+  tag.async = true;
+  tag.src = "https://www.googletagmanager.com/gtag/js?id=G-WYKJBY35LP";
+  document.head.append(tag);
+}
+</script>
+  &lt;link rel=&#34;canonical&#34; href=&#34;https://swaylia.com/privacy/&#34;&gt;
+  &lt;link rel=&#34;icon&#34; href=&#34;/favicon.ico&#34; sizes=&#34;any&#34;&gt;
+  &lt;link rel=&#34;apple-touch-icon&#34; href=&#34;/apple-touch-icon.png&#34;&gt;
+  &lt;meta name=&#34;apple-itunes-app&#34; content=&#34;app-id=6818956919&#34;&gt;
+  &lt;style&gt;
     .site-home { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 18px; color: var(--ink); font-weight: 800; font-size: 17px; text-decoration: none; }
     .site-home img { width: 30px; height: 30px; border-radius: 8px; box-shadow: 0 0 0 1px var(--line); }
-  </style>
-</head>
+  &lt;/style&gt;
+&lt;/head&gt;
 <body>
   <main>
     <a class="site-home" href="/"><img src="/assets/icon-96.png" alt="" width="30" height="30">語漪 Swaylia</a>
@@ -54,7 +72,7 @@
 
     <section class="card" id="zh-Hant" lang="zh-Hant">
       <h1>隱私權政策</h1>
-      <p class="meta">語漪 Swaylia · 最後更新：2026 年 10 月 3 日</p>
+      <p class="meta">語漪 Swaylia · 最後更新：2026 年 10 月 19 日</p>
       <h2>我們不收集個人資料</h2>
       <p>語漪沒有帳號系統，不使用廣告、分析或追蹤 SDK。你建立的作品、照片、影片、聲音與文字只在你的裝置上處理與儲存，不會上傳到我們的伺服器。</p>
       <h2>照片圖庫</h2>
@@ -72,13 +90,15 @@
       <p>若你開啟「試用結束前一天提醒我」，提醒會在裝置本機排程，不需要任何伺服器，也不會傳送任何資料。</p>
       <h2>兒童隱私</h2>
       <p>語漪不會刻意收集任何人的個人資料，包括 13 歲以下兒童。</p>
+      <h2>官方網站</h2>
+      <p>swaylia.com 網站使用 Google Analytics，統計造訪次數、從哪個網站點進來，以及按下 App Store 按鈕、打開作品牆這類操作。我們看不到你的姓名或聯絡方式，也沒有開啟廣告功能；在歐洲經濟區、英國與瑞士，網站不會存放分析 Cookie。這些資料由 Google 依<a href="https://policies.google.com/privacy?hl=zh-TW">其隱私權政策</a>處理，你也可以安裝 <a href="https://tools.google.com/dlpage/gaoptout?hl=zh-TW">Google Analytics 停用外掛程式</a>停止記錄。App 本身不含分析工具。</p>
       <h2>聯絡我們</h2>
       <p>如有問題或隱私相關請求，請寄信至 <a href="mailto:support@eric-lam.com">support@eric-lam.com</a>。若你主動寫信給我們，我們只會使用你提供的內容回覆並改善支援。</p>
     </section>
 
     <section class="card" id="en" lang="en">
       <h1>Privacy Policy</h1>
-      <p class="meta">Swaylia · Last updated October 3, 2026</p>
+      <p class="meta">Swaylia · Last updated October 19, 2026</p>
       <h2>We don't collect personal data</h2>
       <p>Swaylia has no accounts and contains no advertising, analytics or tracking SDKs. The posts, photos, videos, audio and text you create are processed and stored on your device only and are never uploaded to our servers.</p>
       <h2>Photo library</h2>
@@ -96,13 +116,15 @@
       <p>If you turn on “Remind me a day before my trial ends”, the reminder is scheduled locally on your device. No server is involved and no data is sent.</p>
       <h2>Children's privacy</h2>
       <p>Swaylia does not knowingly collect personal data from anyone, including children under 13.</p>
+      <h2>Website</h2>
+      <p>swaylia.com uses Google Analytics to count visits, see which sites people come from, and record actions such as tapping the App Store button or opening a post on the showcase wall. We never see your name or contact details, and advertising features are turned off; in the EEA, the UK and Switzerland the site stores no analytics cookies. Google processes this data under <a href="https://policies.google.com/privacy?hl=en">its privacy policy</a>, and you can opt out with the <a href="https://tools.google.com/dlpage/gaoptout?hl=en">Google Analytics opt-out add-on</a>. The app itself contains no analytics.</p>
       <h2>Contact</h2>
       <p>Questions or privacy requests: <a href="mailto:support@eric-lam.com">support@eric-lam.com</a>. If you write to us, we use what you send only to reply and to improve support.</p>
     </section>
 
     <section class="card" id="zh-Hans" lang="zh-Hans">
       <h1>隐私政策</h1>
-      <p class="meta">语漪 Swaylia · 最后更新：2026 年 10 月 3 日</p>
+      <p class="meta">语漪 Swaylia · 最后更新：2026 年 10 月 19 日</p>
       <h2>我们不收集个人数据</h2>
       <p>语漪没有账户系统，不使用广告、分析或追踪 SDK。你创建的作品、照片、视频、音频和文字只在你的设备上处理和保存，不会上传到我们的服务器。</p>
       <h2>照片图库</h2>
@@ -120,13 +142,15 @@
       <p>如果你开启“试用结束前一天提醒我”，提醒会在设备本地安排，不需要任何服务器，也不会发送任何数据。</p>
       <h2>儿童隐私</h2>
       <p>语漪不会有意收集任何人的个人数据，包括 13 岁以下儿童。</p>
+      <h2>官方网站</h2>
+      <p>swaylia.com 网站使用 Google Analytics，统计访问次数、从哪个网站点进来，以及点按 App Store 按钮、打开作品墙这类操作。我们看不到你的姓名或联系方式，也没有开启广告功能；在欧洲经济区、英国和瑞士，网站不会存储分析 Cookie。这些数据由 Google 依照<a href="https://policies.google.com/privacy?hl=zh-CN">其隐私政策</a>处理，你也可以安装 <a href="https://tools.google.com/dlpage/gaoptout?hl=zh-CN">Google Analytics 停用插件</a>停止记录。App 本身不含分析工具。</p>
       <h2>联系我们</h2>
       <p>如有问题或隐私相关请求，请发送邮件至 <a href="mailto:support@eric-lam.com">support@eric-lam.com</a>。如果你主动写信给我们，我们只会用你提供的内容回复并改进支持。</p>
     </section>
 
     <section class="card" id="ja" lang="ja">
       <h1>プライバシーポリシー</h1>
-      <p class="meta">Swaylia · 最終更新日：2026 年 10 月 3 日</p>
+      <p class="meta">Swaylia · 最終更新日：2026 年 10 月 19 日</p>
       <h2>個人データは収集しません</h2>
       <p>Swaylia にはアカウントがなく、広告・分析・トラッキングの SDK も使用していません。作成した作品、写真、動画、サウンド、テキストはお使いの端末上でのみ処理・保存され、当社のサーバーにアップロードされることはありません。</p>
       <h2>写真ライブラリ</h2>
@@ -144,13 +168,15 @@
       <p>「トライアル終了の前日に通知」をオンにした場合、リマインダーは端末上でスケジュールされます。サーバーは使わず、データも送信しません。</p>
       <h2>お子様のプライバシー</h2>
       <p>Swaylia は、13 歳未満のお子様を含め、どなたの個人データも意図的に収集しません。</p>
+      <h2>公式サイト</h2>
+      <p>swaylia.com では Google アナリティクスを使い、訪問数、どのサイトから来たか、App Store ボタンのタップや作品ギャラリーを開くといった操作を集計しています。当社があなたの氏名や連絡先を知ることはなく、広告機能もオフにしています。欧州経済領域、英国、スイスでは分析用の Cookie を保存しません。これらのデータは Google の<a href="https://policies.google.com/privacy?hl=ja">プライバシーポリシー</a>に従って処理されます。<a href="https://tools.google.com/dlpage/gaoptout?hl=ja">Google アナリティクス オプトアウト アドオン</a>で記録を止めることもできます。アプリ自体には分析ツールは含まれていません。</p>
       <h2>お問い合わせ</h2>
       <p>ご質問やプライバシーに関するご依頼は <a href="mailto:support@eric-lam.com">support@eric-lam.com</a> までお送りください。お送りいただいた内容は、返信とサポートの改善にのみ使用します。</p>
     </section>
 
     <section class="card" id="ko" lang="ko">
       <h1>개인정보 처리방침</h1>
-      <p class="meta">Swaylia · 최종 업데이트: 2026년 10월 3일</p>
+      <p class="meta">Swaylia · 최종 업데이트: 2026년 10월 19일</p>
       <h2>개인정보를 수집하지 않습니다</h2>
       <p>Swaylia에는 계정이 없으며 광고, 분석, 추적 SDK를 사용하지 않습니다. 만든 작품과 사진, 동영상, 사운드, 텍스트는 기기 안에서만 처리·저장되며 저희 서버로 업로드되지 않습니다.</p>
       <h2>사진 보관함</h2>
@@ -168,6 +194,8 @@
       <p>'체험 종료 하루 전에 알림 받기'를 켜면 알림은 기기에서 예약됩니다. 서버를 쓰지 않으며 어떤 데이터도 전송하지 않습니다.</p>
       <h2>아동의 개인정보</h2>
       <p>Swaylia는 만 13세 미만 아동을 포함해 누구의 개인정보도 의도적으로 수집하지 않습니다.</p>
+      <h2>공식 웹사이트</h2>
+      <p>swaylia.com은 Google 애널리틱스로 방문 수, 어느 사이트에서 들어왔는지, App Store 버튼 탭이나 작품 갤러리 열기 같은 동작을 집계합니다. 저희는 이름이나 연락처를 알 수 없으며 광고 기능도 꺼 두었습니다. 유럽 경제 지역, 영국, 스위스에서는 분석용 쿠키를 저장하지 않습니다. 이 데이터는 Google <a href="https://policies.google.com/privacy?hl=ko">개인정보처리방침</a>에 따라 처리되며, <a href="https://tools.google.com/dlpage/gaoptout?hl=ko">Google 애널리틱스 차단 부가기능</a>으로 기록을 중지할 수 있습니다. 앱 자체에는 분석 도구가 없습니다.</p>
       <h2>문의</h2>
       <p>질문이나 개인정보 관련 요청은 <a href="mailto:support@eric-lam.com">support@eric-lam.com</a>으로 보내 주세요. 보내 주신 내용은 답변과 지원 개선에만 사용합니다.</p>
     </section>

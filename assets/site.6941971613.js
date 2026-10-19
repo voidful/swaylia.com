@@ -1,3 +1,18 @@
+// Google Analytics events; gtag exists only on swaylia.com when the build has a measurement ID.
+const track = (name, params) => {
+  if (window.gtag) window.gtag("event", name, params);
+};
+
+// App Store taps, by where the badge sits ("hero" at the top, "cta" at the end). GA4 holds
+// events for about five seconds, but the tap leaves the page (or, on iPhone, hides it behind
+// the App Store) before then. gtag sends what it holds on pagehide, so announce one now.
+document.addEventListener("click", (event) => {
+  const store = event.target.closest && event.target.closest("a.store");
+  if (!store || !window.gtag) return;
+  track("app_store_click", { placement: store.dataset.placement });
+  window.dispatchEvent(new PageTransitionEvent("pagehide", { persisted: false }));
+});
+
 // Offers the visitor's own language once, in that language. It never redirects:
 // every page stays reachable (and indexable) at its own address.
 (() => {
@@ -88,6 +103,7 @@ if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
   for (const chip of chips) {
     chip.addEventListener("click", () => {
       const key = chip.dataset.filter;
+      track("showcase_filter", { filter: key });
       for (const other of chips) other.setAttribute("aria-pressed", String(other === chip));
       for (const item of items) item.hidden = key !== "all" && !item.dataset.tags.split(" ").includes(key);
     });
@@ -137,6 +153,7 @@ if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
     stage.replaceChildren(media);
     caption.textContent = tile.dataset.caption;
     dialog.showModal();
+    track("showcase_open", { post_id: tile.dataset.post, motion: tile.dataset.video ? "yes" : "no" });
   });
   dialog.querySelector(".wall-close").addEventListener("click", () => dialog.close());
   dialog.addEventListener("click", (event) => {

@@ -3,6 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+// Google Analytics 4, only on swaylia.com itself so local previews and test runs aren't counted.
+// No ads: ad storage and Google signals stay off everywhere, and in the EEA, the UK and
+// Switzerland analytics runs without cookies (Consent Mode, analytics_storage denied).
+if (location.hostname === "swaylia.com") {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { dataLayer.push(arguments); };
+  const noAds = { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied" };
+  gtag("consent", "default", { ...noAds, analytics_storage: "denied", region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"] });
+  gtag("consent", "default", { ...noAds, analytics_storage: "granted" });
+  gtag("js", new Date());
+  gtag("config", "G-WYKJBY35LP", { allow_google_signals: false, allow_ad_personalization_signals: false });
+  const tag = document.createElement("script");
+  tag.async = true;
+  tag.src = "https://www.googletagmanager.com/gtag/js?id=G-WYKJBY35LP";
+  document.head.append(tag);
+}
+</script>
+
 <title>找不到這個頁面 · Page not found — 語漪 Swaylia</title>
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#ede5d4">
