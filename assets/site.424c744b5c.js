@@ -75,3 +75,72 @@ if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
     video.controls = true;
   }
 }
+
+// The showcase wall: filters, loops that play only while on screen, and a
+// larger view. Visitors who ask for less motion get stills and controls.
+(() => {
+  const wall = document.querySelector(".wall");
+  if (!wall) return;
+  const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const items = [...wall.querySelectorAll(".wall-item")];
+  const chips = [...document.querySelectorAll(".wall-chip")];
+
+  for (const chip of chips) {
+    chip.addEventListener("click", () => {
+      const key = chip.dataset.filter;
+      for (const other of chips) other.setAttribute("aria-pressed", String(other === chip));
+      for (const item of items) item.hidden = key !== "all" && !item.dataset.tags.split(" ").includes(key);
+    });
+  }
+
+  if (!still && "IntersectionObserver" in window) {
+    const watcher = new IntersectionObserver((entries) => {
+      for (const { target: video, isIntersecting } of entries) {
+        if (!isIntersecting) {
+          video.pause();
+          continue;
+        }
+        if (!video.getAttribute("src")) video.src = video.dataset.src;
+        video.play().then(() => video.classList.add("playing")).catch(() => {});
+      }
+    }, { rootMargin: "160px 0px", threshold: 0.2 });
+    for (const video of wall.querySelectorAll("video[data-src]")) watcher.observe(video);
+  }
+
+  const dialog = document.querySelector(".wall-dialog");
+  if (!dialog || typeof dialog.showModal !== "function") return;
+  const stage = dialog.querySelector(".wall-stage");
+  const caption = dialog.querySelector("figcaption");
+  wall.addEventListener("click", (event) => {
+    const tile = event.target.closest(".wall-open");
+    if (!tile) return;
+    const picture = tile.querySelector("img");
+    let media;
+    if (tile.dataset.video) {
+      media = document.createElement("video");
+      media.src = tile.dataset.video;
+      media.poster = tile.dataset.full;
+      media.muted = true;
+      media.loop = true;
+      media.playsInline = true;
+      if (still) media.controls = true;
+      else media.autoplay = true;
+      media.setAttribute("aria-label", picture.alt);
+    } else {
+      media = document.createElement("img");
+      media.src = tile.dataset.full;
+      media.alt = picture.alt;
+      media.lang = picture.lang;
+    }
+    media.width = picture.width * 2;
+    media.height = picture.height * 2;
+    stage.replaceChildren(media);
+    caption.textContent = tile.dataset.caption;
+    dialog.showModal();
+  });
+  dialog.querySelector(".wall-close").addEventListener("click", () => dialog.close());
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener("close", () => stage.replaceChildren());
+})();
