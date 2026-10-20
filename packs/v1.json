@@ -1,0 +1,693 @@
+{
+  "schemaVersion": 1,
+  "packs": [
+    {
+      "id": "halloween-2026",
+      "title": {
+        "zh-Hant": "萬聖節",
+        "en": "Halloween",
+        "zh-Hans": "万圣节",
+        "ja": "ハロウィン",
+        "ko": "핼러윈"
+      },
+      "starts": "2026-10-15",
+      "ends": "2026-11-01",
+      "starters": [
+        {
+          "id": "trick",
+          "title": {
+            "zh-Hant": "不給糖就搗蛋",
+            "en": "Trick or treat",
+            "zh-Hans": "不给糖就捣蛋",
+            "ja": "トリック・オア・トリート",
+            "ko": "트릭 오어 트릿"
+          },
+          "subtitle": {
+            "zh-Hant": "電影感的夜晚邀請",
+            "en": "A cinematic night invite",
+            "zh-Hans": "电影感的夜晚邀请",
+            "ja": "映画のような夜の招待状",
+            "ko": "영화 같은 밤의 초대장"
+          },
+          "ratio": "story",
+          "primaryText": {
+            "zh-Hant": "不給糖\n就搗蛋",
+            "en": "Trick\nor Treat",
+            "zh-Hans": "不给糖\n就捣蛋",
+            "ja": "トリック・\nオア・トリート",
+            "ko": "트릭 오어\n트릿"
+          },
+          "supportingTexts": [
+            {
+              "zh-Hant": "10.31 · 南瓜派對",
+              "en": "10.31 · PUMPKIN PARTY",
+              "zh-Hans": "10.31 · 南瓜派对",
+              "ja": "10.31 · パンプキンパーティー",
+              "ko": "10.31 · 호박 파티"
+            }
+          ],
+          "template": {
+            "designLanguage": "fantasy",
+            "family": "cinematicBand",
+            "variant": "offset",
+            "accent": "tomato",
+            "printTexture": "scanNoise",
+            "auxiliarySystem": "cinematicBars"
+          },
+          "look": {
+            "motion": "extrude",
+            "finish": "spotlight",
+            "background": "filmBurn",
+            "backgroundIntensity": 0.45
+          },
+          "sticker": "spark"
+        },
+        {
+          "id": "costume",
+          "title": {
+            "zh-Hant": "今晚變裝",
+            "en": "Costume night",
+            "zh-Hans": "今晚变装",
+            "ja": "今夜は仮装",
+            "ko": "오늘 밤 변장"
+          },
+          "subtitle": {
+            "zh-Hant": "粗字標語，免費風格",
+            "en": "Bold slogan, free style",
+            "zh-Hans": "粗字标语，免费风格",
+            "ja": "太字のスローガン",
+            "ko": "굵은 슬로건"
+          },
+          "ratio": "portrait",
+          "primaryText": {
+            "zh-Hant": "今晚\n變裝出門",
+            "en": "Costume\nNight Out",
+            "zh-Hans": "今晚\n变装出门",
+            "ja": "今夜は\n仮装でおでかけ",
+            "ko": "오늘 밤은\n변장하고 외출"
+          },
+          "supportingTexts": [
+            {
+              "zh-Hant": "HALLOWEEN · 10.31",
+              "en": "HALLOWEEN · 10.31",
+              "zh-Hans": "HALLOWEEN · 10.31"
+            }
+          ],
+          "template": {
+            "designLanguage": "bold",
+            "family": "typeLed",
+            "variant": "compressed",
+            "accent": "lemon",
+            "printTexture": "halftone",
+            "auxiliarySystem": "brutalBlocks"
+          },
+          "look": {
+            "motion": "stampIn",
+            "finish": "brutal",
+            "background": "splitField"
+          },
+          "sticker": "burst"
+        }
+      ]
+    },
+    {
+      "id": "double11-2026",
+      "title": {
+        "zh-Hant": "雙 11",
+        "en": "11.11 sale",
+        "zh-Hans": "双 11",
+        "ja": "11.11 セール",
+        "ko": "11.11 세일"
+      },
+      "starts": "2026-11-01",
+      "ends": "2026-11-12",
+      "starters": [
+        {
+          "id": "sale",
+          "title": {
+            "zh-Hant": "限時優惠",
+            "en": "Limited-time sale",
+            "zh-Hans": "限时优惠",
+            "ja": "期間限定セール",
+            "ko": "기간 한정 세일"
+          },
+          "subtitle": {
+            "zh-Hant": "一眼看到折扣，免費風格",
+            "en": "Discount at a glance, free style",
+            "zh-Hans": "一眼看到折扣，免费风格",
+            "ja": "ひと目でわかる割引",
+            "ko": "한눈에 보이는 할인"
+          },
+          "ratio": "portrait",
+          "primaryText": {
+            "zh-Hant": "雙 11\n限時優惠",
+            "en": "11.11\nSale",
+            "zh-Hans": "双 11\n限时优惠",
+            "ja": "11.11\n限定セール",
+            "ko": "11.11\n한정 세일"
+          },
+          "supportingTexts": [
+            {
+              "zh-Hant": "只到 11/11 23:59",
+              "en": "ENDS 11/11 23:59",
+              "zh-Hans": "只到 11/11 23:59",
+              "ja": "11/11 23:59 まで",
+              "ko": "11/11 23:59까지"
+            }
+          ],
+          "template": {
+            "designLanguage": "bold",
+            "family": "centerFragment",
+            "variant": "offset",
+            "accent": "tomato",
+            "printTexture": "xerox",
+            "auxiliarySystem": "kineticStripes"
+          },
+          "look": {
+            "motion": "numberSlam",
+            "finish": "brutal",
+            "background": "splitField"
+          },
+          "sticker": "label"
+        },
+        {
+          "id": "restock",
+          "title": {
+            "zh-Hant": "熱銷補貨",
+            "en": "Back in stock",
+            "zh-Hans": "热销补货",
+            "ja": "再入荷",
+            "ko": "재입고"
+          },
+          "subtitle": {
+            "zh-Hant": "繽紛跳動的上新公告",
+            "en": "A bouncy new-arrival post",
+            "zh-Hans": "缤纷跳动的上新公告",
+            "ja": "弾む新入荷のお知らせ",
+            "ko": "통통 튀는 입고 소식"
+          },
+          "ratio": "square",
+          "primaryText": {
+            "zh-Hant": "熱銷\n補貨到",
+            "en": "Back\nin Stock",
+            "zh-Hans": "热销\n补货到",
+            "ja": "人気商品\n再入荷",
+            "ko": "인기 상품\n재입고"
+          },
+          "supportingTexts": [
+            {
+              "zh-Hant": "SHOP NOW · 11.11",
+              "en": "SHOP NOW · 11.11",
+              "zh-Hans": "SHOP NOW · 11.11"
+            }
+          ],
+          "template": {
+            "designLanguage": "colorful",
+            "family": "dotOrbit",
+            "variant": "compressed",
+            "accent": "magenta",
+            "printTexture": "risograph",
+            "auxiliarySystem": "softHalo"
+          },
+          "look": {
+            "motion": "letterBounce",
+            "finish": "candy",
+            "background": "randomPopDots",
+            "backgroundIntensity": 0.4
+          },
+          "sticker": "spark"
+        }
+      ]
+    },
+    {
+      "id": "christmas-2026",
+      "title": {
+        "zh-Hant": "聖誕節",
+        "en": "Christmas",
+        "zh-Hans": "圣诞节",
+        "ja": "クリスマス",
+        "ko": "크리스마스"
+      },
+      "starts": "2026-12-01",
+      "ends": "2026-12-26",
+      "starters": [
+        {
+          "id": "merry",
+          "title": {
+            "zh-Hant": "聖誕快樂",
+            "en": "Merry Christmas",
+            "zh-Hans": "圣诞快乐",
+            "ja": "メリークリスマス",
+            "ko": "메리 크리스마스"
+          },
+          "subtitle": {
+            "zh-Hant": "手作印刷的節日卡",
+            "en": "A hand-printed holiday card",
+            "zh-Hans": "手作印刷的节日卡",
+            "ja": "手刷りのホリデーカード",
+            "ko": "손으로 찍은 홀리데이 카드"
+          },
+          "ratio": "portrait",
+          "primaryText": {
+            "zh-Hant": "聖誕\n快樂",
+            "en": "Merry\nChristmas",
+            "zh-Hans": "圣诞\n快乐",
+            "ja": "メリー\nクリスマス",
+            "ko": "메리\n크리스마스"
+          },
+          "supportingTexts": [
+            {
+              "zh-Hant": "12.25 · WITH LOVE",
+              "en": "12.25 · WITH LOVE",
+              "zh-Hans": "12.25 · WITH LOVE"
+            }
+          ],
+          "template": {
+            "designLanguage": "riso",
+            "family": "upperRightBlock",
+            "variant": "airy",
+            "accent": "tomato",
+            "printTexture": "risograph",
+            "auxiliarySystem": "handDrawn"
+          },
+          "look": {
+            "motion": "floatDrift",
+            "flair": "snow",
+            "background": "dotRain",
+            "backgroundIntensity": 0.35
+          },
+          "sticker": "scribble"
+        },
+        {
+          "id": "gift",
+          "title": {
+            "zh-Hant": "給自己的禮物",
+            "en": "A gift for you",
+            "zh-Hans": "给自己的礼物",
+            "ja": "自分へのギフト",
+            "ko": "나에게 주는 선물"
+          },
+          "subtitle": {
+            "zh-Hant": "金箔質感的節日上新",
+            "en": "A gold-foil holiday launch",
+            "zh-Hans": "金箔质感的节日上新",
+            "ja": "金箔のホリデー新作",
+            "ko": "금박 느낌의 홀리데이 신상"
+          },
+          "ratio": "story",
+          "primaryText": {
+            "zh-Hant": "給今年的\n自己一份禮物",
+            "en": "A gift\nfor this year’s you",
+            "zh-Hans": "给今年的\n自己一份礼物",
+            "ja": "今年の自分に\nささやかなギフトを",
+            "ko": "올해의 나에게\n선물 하나"
+          },
+          "supportingTexts": [
+            {
+              "zh-Hant": "HOLIDAY EDIT",
+              "en": "HOLIDAY EDIT",
+              "zh-Hans": "HOLIDAY EDIT"
+            }
+          ],
+          "template": {
+            "designLanguage": "sleek",
+            "family": "singleSpecimen",
+            "variant": "airy",
+            "accent": "lemon",
+            "printTexture": "letterpress",
+            "auxiliarySystem": "softHalo"
+          },
+          "look": {
+            "motion": "streak",
+            "finish": "goldFoil",
+            "background": "radialHalo"
+          }
+        },
+        {
+          "id": "warmest",
+          "title": {
+            "zh-Hant": "年末的一句話",
+            "en": "Words for the year",
+            "zh-Hans": "年末的一句话",
+            "ja": "年末のひとこと",
+            "ko": "연말의 한마디"
+          },
+          "subtitle": {
+            "zh-Hant": "直排的溫暖告白，免費風格",
+            "en": "A warm vertical note, free style",
+            "zh-Hans": "竖排的温暖告白，免费风格",
+            "ja": "縦書きのあたたかい一言",
+            "ko": "세로쓰기 따뜻한 한마디"
+          },
+          "ratio": "portrait",
+          "primaryText": {
+            "zh-Hant": "今年最溫暖的\n一句話",
+            "en": "The warmest\nwords this year",
+            "zh-Hans": "今年最温暖的\n一句话",
+            "ja": "今年いちばん\nあたたかい言葉",
+            "ko": "올해 가장\n따뜻했던 말"
+          },
+          "supportingTexts": [
+            {
+              "zh-Hant": "DEC · 2026",
+              "en": "DEC · 2026",
+              "zh-Hans": "DEC · 2026"
+            }
+          ],
+          "template": {
+            "designLanguage": "storytelling",
+            "family": "verticalSpine",
+            "variant": "airy",
+            "accent": "tomato",
+            "printTexture": "letterpress",
+            "auxiliarySystem": "editorialRules"
+          },
+          "look": {
+            "motion": "softFocus",
+            "flair": "twinkle",
+            "background": "solidPaper"
+          }
+        }
+      ]
+    },
+    {
+      "id": "newyear-2027",
+      "title": {
+        "zh-Hant": "跨年",
+        "en": "New Year",
+        "zh-Hans": "跨年",
+        "ja": "年越し",
+        "ko": "새해"
+      },
+      "starts": "2026-12-26",
+      "ends": "2027-01-05",
+      "starters": [
+        {
+          "id": "countdown",
+          "title": {
+            "zh-Hant": "你好 2027",
+            "en": "Hello 2027",
+            "zh-Hans": "你好 2027",
+            "ja": "こんにちは 2027",
+            "ko": "안녕 2027"
+          },
+          "subtitle": {
+            "zh-Hant": "霓虹倒數",
+            "en": "A neon countdown",
+            "zh-Hans": "霓虹倒数",
+            "ja": "ネオンのカウントダウン",
+            "ko": "네온 카운트다운"
+          },
+          "ratio": "story",
+          "primaryText": {
+            "zh-Hant": "2027\n你好",
+            "en": "Hello\n2027",
+            "zh-Hans": "2027\n你好",
+            "ja": "こんにちは\n2027",
+            "ko": "안녕\n2027"
+          },
+          "supportingTexts": [
+            {
+              "zh-Hant": "COUNTDOWN · 12.31",
+              "en": "COUNTDOWN · 12.31",
+              "zh-Hans": "COUNTDOWN · 12.31"
+            }
+          ],
+          "template": {
+            "designLanguage": "neon",
+            "family": "centerFragment",
+            "variant": "compressed",
+            "accent": "violet",
+            "printTexture": "scanNoise",
+            "auxiliarySystem": "softHalo"
+          },
+          "look": {
+            "motion": "heartbeatZoom",
+            "finish": "chrome",
+            "background": "floatingLights",
+            "backgroundIntensity": 0.35
+          },
+          "sticker": "spark"
+        },
+        {
+          "id": "slow",
+          "title": {
+            "zh-Hant": "新年慢慢來",
+            "en": "New year, slow down",
+            "zh-Hans": "新年慢慢来",
+            "ja": "新年はゆっくり",
+            "ko": "새해는 천천히"
+          },
+          "subtitle": {
+            "zh-Hant": "極簡留白的新年願望，免費風格",
+            "en": "A quiet wish, free style",
+            "zh-Hans": "极简留白的新年愿望，免费风格",
+            "ja": "余白のある新年の願い",
+            "ko": "여백 있는 새해 소원"
+          },
+          "ratio": "tall",
+          "primaryText": {
+            "zh-Hant": "新的一年\n慢慢來",
+            "en": "New year,\nslow down",
+            "zh-Hans": "新的一年\n慢慢来",
+            "ja": "新しい一年は\nゆっくりと",
+            "ko": "새해에는\n천천히"
+          },
+          "supportingTexts": [
+            {
+              "zh-Hant": "2027.01.01",
+              "en": "2027.01.01",
+              "zh-Hans": "2027.01.01"
+            }
+          ],
+          "template": {
+            "designLanguage": "minimal",
+            "family": "typeLed",
+            "variant": "airy",
+            "accent": "cobalt",
+            "printTexture": "paperFibers",
+            "auxiliarySystem": "pureSpace"
+          },
+          "look": {
+            "motion": "blockReveal",
+            "finish": "inkFade",
+            "background": "quietGradient"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lunar-2027",
+      "title": {
+        "zh-Hant": "新春",
+        "en": "Lunar New Year",
+        "zh-Hans": "新春",
+        "ja": "旧正月",
+        "ko": "설날"
+      },
+      "starts": "2027-01-20",
+      "ends": "2027-02-21",
+      "starters": [
+        {
+          "id": "spring",
+          "title": {
+            "zh-Hant": "新春快樂",
+            "en": "Happy Lunar New Year",
+            "zh-Hans": "新春快乐",
+            "ja": "春節おめでとう",
+            "ko": "새해 복 많이"
+          },
+          "subtitle": {
+            "zh-Hant": "蓋章感的賀年卡",
+            "en": "A stamped greeting card",
+            "zh-Hans": "盖章感的贺年卡",
+            "ja": "スタンプ風の年賀状",
+            "ko": "도장 느낌 연하장"
+          },
+          "ratio": "portrait",
+          "primaryText": {
+            "zh-Hant": "新春\n快樂",
+            "en": "Happy\nLunar New Year",
+            "zh-Hans": "新春\n快乐",
+            "ja": "春節\nおめでとう",
+            "ko": "새해 복\n많이 받으세요"
+          },
+          "supportingTexts": [
+            {
+              "zh-Hant": "丁未年 · 新春大吉",
+              "en": "YEAR OF THE GOAT",
+              "zh-Hans": "丁未年 · 新春大吉",
+              "ja": "ひつじ年",
+              "ko": "양띠 해"
+            }
+          ],
+          "template": {
+            "designLanguage": "terracotta",
+            "family": "centerFragment",
+            "variant": "offset",
+            "accent": "tomato",
+            "printTexture": "risograph",
+            "auxiliarySystem": "archivalMarks"
+          },
+          "look": {
+            "motion": "stampIn",
+            "finish": "riso",
+            "background": "halftoneBoom",
+            "backgroundIntensity": 0.4
+          },
+          "sticker": "registration"
+        },
+        {
+          "id": "fortune",
+          "title": {
+            "zh-Hant": "恭喜發財",
+            "en": "Wishing you luck",
+            "zh-Hans": "恭喜发财",
+            "ja": "福が来ますように",
+            "ko": "복 많이 받으세요"
+          },
+          "subtitle": {
+            "zh-Hant": "直排春聯，免費風格",
+            "en": "A vertical couplet, free style",
+            "zh-Hans": "竖排春联，免费风格",
+            "ja": "縦書きの春の言葉",
+            "ko": "세로쓰기 새해 인사"
+          },
+          "ratio": "tall",
+          "primaryText": {
+            "zh-Hant": "恭喜發財\n萬事如意",
+            "en": "Wishing you\nluck & joy",
+            "zh-Hans": "恭喜发财\n万事如意",
+            "ja": "福が来ますように\nよい一年を",
+            "ko": "복 많이 받으시고\n뜻하는 일 이루세요"
+          },
+          "supportingTexts": [
+            {
+              "zh-Hant": "SPRING · 2027",
+              "en": "SPRING · 2027",
+              "zh-Hans": "SPRING · 2027"
+            }
+          ],
+          "template": {
+            "designLanguage": "editorial",
+            "family": "verticalSpine",
+            "variant": "airy",
+            "accent": "tomato",
+            "printTexture": "letterpress",
+            "auxiliarySystem": "archivalMarks"
+          },
+          "look": {
+            "motion": "inkBleed",
+            "finish": "letterpress",
+            "background": "radialHalo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "valentine-2027",
+      "title": {
+        "zh-Hant": "情人節",
+        "en": "Valentine’s Day",
+        "zh-Hans": "情人节",
+        "ja": "バレンタイン",
+        "ko": "밸런타인데이"
+      },
+      "starts": "2027-02-07",
+      "ends": "2027-02-15",
+      "starters": [
+        {
+          "id": "everyday",
+          "title": {
+            "zh-Hant": "你是我的每一天",
+            "en": "Every day with you",
+            "zh-Hans": "你是我的每一天",
+            "ja": "毎日がきみと",
+            "ko": "너와 함께한 매일"
+          },
+          "subtitle": {
+            "zh-Hant": "愛心跳動的情書",
+            "en": "A love note with hearts",
+            "zh-Hans": "爱心跳动的情书",
+            "ja": "ハートが弾むラブレター",
+            "ko": "하트가 튀는 러브레터"
+          },
+          "ratio": "square",
+          "primaryText": {
+            "zh-Hant": "你是我的\n每一天",
+            "en": "Every day\nwith you",
+            "zh-Hans": "你是我的\n每一天",
+            "ja": "毎日が\nきみと",
+            "ko": "너와 함께한\n매일"
+          },
+          "supportingTexts": [
+            {
+              "zh-Hant": "02.14 · LOVE NOTES",
+              "en": "02.14 · LOVE NOTES",
+              "zh-Hans": "02.14 · LOVE NOTES"
+            }
+          ],
+          "template": {
+            "designLanguage": "friendly",
+            "family": "dotOrbit",
+            "variant": "airy",
+            "accent": "magenta",
+            "printTexture": "risograph",
+            "auxiliarySystem": "softHalo"
+          },
+          "look": {
+            "motion": "waveLetters",
+            "flair": "hearts",
+            "background": "heartPop",
+            "backgroundIntensity": 0.35
+          }
+        },
+        {
+          "id": "dinner",
+          "title": {
+            "zh-Hant": "一起吃飯吧",
+            "en": "Dinner tonight?",
+            "zh-Hans": "一起吃饭吧",
+            "ja": "一緒にごはん",
+            "ko": "같이 밥 먹자"
+          },
+          "subtitle": {
+            "zh-Hant": "螢光筆畫重點的邀約，免費風格",
+            "en": "A highlighted invite, free style",
+            "zh-Hans": "荧光笔画重点的邀约，免费风格",
+            "ja": "マーカーで強調したお誘い",
+            "ko": "형광펜으로 강조한 초대"
+          },
+          "ratio": "portrait",
+          "primaryText": {
+            "zh-Hant": "今晚\n一起吃飯吧",
+            "en": "Dinner\ntonight?",
+            "zh-Hans": "今晚\n一起吃饭吧",
+            "ja": "今夜\n一緒にごはん",
+            "ko": "오늘 밤\n같이 밥 먹자"
+          },
+          "supportingTexts": [
+            {
+              "zh-Hant": "VALENTINE’S · 02.14",
+              "en": "VALENTINE’S · 02.14",
+              "zh-Hans": "VALENTINE’S · 02.14"
+            }
+          ],
+          "template": {
+            "designLanguage": "cafe",
+            "family": "lowerLeftFloat",
+            "variant": "offset",
+            "accent": "tomato",
+            "printTexture": "paperFibers",
+            "auxiliarySystem": "editorialRules"
+          },
+          "look": {
+            "motion": "highlighter",
+            "flair": "twinkle",
+            "background": "solidPaper"
+          }
+        }
+      ]
+    }
+  ]
+}
